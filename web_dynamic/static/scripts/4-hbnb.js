@@ -53,7 +53,7 @@ $(document).ready(function () {
     $.ajax({
       type: 'POST',
       url: 'http://0.0.0.0:5001/api/v1/places_search/',
-      data: JSON.stringify({'amenities': Object.keys(ls_amen)}),
+      data: JSON.stringify({'amenities': Object.keys(amenityIds)}),
       contentType: 'application/json',
       success: function (data) {
 	for (let i = 0; i < data.length; i++) {
