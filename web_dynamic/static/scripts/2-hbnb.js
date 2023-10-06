@@ -29,9 +29,9 @@ $(document).ready(function () {
     dataType: 'json',
     success: function (data) {
       if (data.status === 'OK') {
-	$('#api_status').addClass('available');
+        $('#api_status').addClass('available');
       } else {
-	$('#api_status').removeClass('available');
+        $('#api_status').removeClass('available');
       }
     }
   });
